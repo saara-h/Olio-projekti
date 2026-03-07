@@ -53,13 +53,35 @@ namespace Palkanlaskenta_harjoitustyö
             };
 
             employeeRepository.AddEmployee(emp);
-            MessageBox.Show("Työntekijä tallennettu onnistuneesti!"); //vahvistusviesti
+            MessageBox.Show("Työntekijä tallennettu onnistuneesti!");
+
+            ClearInputs();
         }
 
-////////////////////////////////// Validointifunktiot ////////////////////////////////////////////////////
+        //tyhjennetään syötteet "Tyhjennä"-napilla
+        private void btnEmpty_Click(object sender, EventArgs e)
+        {
+            ClearInputs();
+        }
+
+        //syötteiden tyhjennys
+        private void ClearInputs()
+        {
+            txtFirstName.Clear();
+            txtLastName.Clear();
+            dtpBirthdate.Value = DateTime.Today;
+            txtAddress.Clear();
+            comboJobTitle.SelectedIndex = -1;
+            comboPayType.SelectedIndex = -1;
+            txtSalary.Clear();
+            txtTaxRate.Clear();
+            txtFirstName.Focus();
+        }
+
+        ////////////////////////////////// Validointifunktiot ////////////////////////////////////////////////////
 
         //1. pakolliset kentät täytetty
-        private bool ValidateInputNotEmpty(string firstName, string lastName, string address, 
+        private bool ValidateInputNotEmpty(string firstName, string lastName, string address,
                                             string jobTitle, string payType, string salaryText)
         {
             if (string.IsNullOrWhiteSpace(firstName) ||
@@ -91,12 +113,12 @@ namespace Palkanlaskenta_harjoitustyö
         private bool ValidateAge(DateTime birthdate)
         {
             int age = DateTime.Today.Year - birthdate.Year;
-           
+
             if (birthdate > DateTime.Today.AddYears(-age))
             {
                 age--; //ei vielä täyttänyt 18 -> age == 17
             }
-    
+
             if (age < 18)
             {
                 MessageBox.Show("Työntekijän tulee olla vähintään 18-vuotias");

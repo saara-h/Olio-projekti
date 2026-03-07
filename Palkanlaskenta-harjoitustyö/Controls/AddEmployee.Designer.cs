@@ -197,6 +197,7 @@ namespace Palkanlaskenta_harjoitustyö
             btnEmpty.TabIndex = 19;
             btnEmpty.Text = "Tyhjää";
             btnEmpty.UseVisualStyleBackColor = true;
+            btnEmpty.Click += btnEmpty_Click;
             // 
             // lblEmployeeID
             // 
