@@ -1,3 +1,5 @@
+using Palkanlaskenta_harjoitustyö.Repos;
+
 namespace Palkanlaskenta_harjoitustyö
 {
     public partial class MainForm : Form

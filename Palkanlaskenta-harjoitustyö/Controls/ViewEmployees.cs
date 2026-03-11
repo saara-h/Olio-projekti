@@ -1,4 +1,5 @@
-﻿using Palkanlaskenta_harjoitustyö.Validators;
+﻿using Palkanlaskenta_harjoitustyö.Repos;
+using Palkanlaskenta_harjoitustyö.Validators;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

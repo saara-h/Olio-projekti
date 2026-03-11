@@ -5,7 +5,7 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace Palkanlaskenta_harjoitustyö
+namespace Palkanlaskenta_harjoitustyö.Repos
 {
     public class EmployeeRepository
     {
