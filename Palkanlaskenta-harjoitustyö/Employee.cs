@@ -12,6 +12,7 @@ namespace Palkanlaskenta_harjoitustyö
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public DateTime Birthdate { get; set; }
+        public string SocialSecurityNumber { get; set; }
         public string Address { get; set; }
         public string JobTitle { get; set; }
         public string PayType { get; set; } //tuntipalkka vai kuukausipalkka
@@ -23,12 +24,13 @@ namespace Palkanlaskenta_harjoitustyö
 
         public Employee() { }
 
-        public Employee(string firstName, string lastName, DateTime birthDate, 
+        public Employee(string firstName, string lastName, DateTime birthDate,string ssn, 
                         string address, string jobtitle, decimal salary)
         {
             FirstName = firstName;
             LastName = lastName;
             Birthdate = birthDate;
+            SocialSecurityNumber = ssn;
             Address = address;
             JobTitle = jobtitle;
             Salary = salary;

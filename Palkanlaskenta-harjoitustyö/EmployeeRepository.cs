@@ -36,6 +36,13 @@ namespace Palkanlaskenta_harjoitustyö
             return Employees.Max(e => e.Id) + 1;
         }
 
+        //tarkistetaan, löytyykö hetu olemassa olevista työntekijöistä
+        //yksilöllinen tunnus, estetään saman henkilön lisääminen kahdesti
+        public bool SsnExists(string ssn)
+        {
+            return Employees.Any(e => e.SocialSecurityNumber == ssn);
+        }
+
         //päivitetään työntekijän tietoja, jos työntekijä löytyy listasta
         public void UpdateEmployee(Employee updatedEmp)
         {

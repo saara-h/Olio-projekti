@@ -48,8 +48,10 @@ namespace Palkanlaskenta_harjoitustyö
             btnAdd = new Button();
             btnEmpty = new Button();
             lblEmployeeID = new Label();
-            textBox1 = new TextBox();
+            txtEmployeeID = new TextBox();
             dtpBirthdate = new DateTimePicker();
+            txtSocialSecurityNumber = new TextBox();
+            lblSocialSecurityNumber = new Label();
             SuspendLayout();
             // 
             // lblFirstName
@@ -208,32 +210,50 @@ namespace Palkanlaskenta_harjoitustyö
             lblEmployeeID.TabIndex = 20;
             lblEmployeeID.Text = "ID";
             // 
-            // textBox1
+            // txtEmployeeID
             // 
-            textBox1.Location = new Point(92, 27);
-            textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
-            textBox1.Size = new Size(33, 31);
-            textBox1.TabIndex = 21;
+            txtEmployeeID.Location = new Point(92, 27);
+            txtEmployeeID.Name = "txtEmployeeID";
+            txtEmployeeID.ReadOnly = true;
+            txtEmployeeID.Size = new Size(33, 31);
+            txtEmployeeID.TabIndex = 21;
             // 
             // dtpBirthdate
             // 
             dtpBirthdate.Format = DateTimePickerFormat.Short;
             dtpBirthdate.Location = new Point(54, 161);
-            dtpBirthdate.MaxDate = new DateTime(2026, 3, 7, 0, 0, 0, 0);
+            dtpBirthdate.MaxDate = DateTime.Today;
             dtpBirthdate.Name = "dtpBirthdate";
             dtpBirthdate.RightToLeft = RightToLeft.No;
-            dtpBirthdate.Size = new Size(150, 31);
+            dtpBirthdate.Size = new Size(190, 31);
             dtpBirthdate.TabIndex = 22;
-            dtpBirthdate.Value = new DateTime(2026, 3, 7, 0, 0, 0, 0);
+            dtpBirthdate.Value = DateTime.Today;
+            // 
+            // txtSocialSecurityNumber
+            // 
+            txtSocialSecurityNumber.Location = new Point(250, 161);
+            txtSocialSecurityNumber.Name = "txtSocialSecurityNumber";
+            txtSocialSecurityNumber.Size = new Size(183, 31);
+            txtSocialSecurityNumber.TabIndex = 23;
+            // 
+            // lblSocialSecurityNumber
+            // 
+            lblSocialSecurityNumber.AutoSize = true;
+            lblSocialSecurityNumber.Location = new Point(250, 133);
+            lblSocialSecurityNumber.Name = "lblSocialSecurityNumber";
+            lblSocialSecurityNumber.Size = new Size(126, 25);
+            lblSocialSecurityNumber.TabIndex = 24;
+            lblSocialSecurityNumber.Text = "Henkilötunnus";
             // 
             // AddEmployee
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
+            Controls.Add(lblSocialSecurityNumber);
+            Controls.Add(txtSocialSecurityNumber);
             Controls.Add(dtpBirthdate);
-            Controls.Add(textBox1);
+            Controls.Add(txtEmployeeID);
             Controls.Add(lblEmployeeID);
             Controls.Add(btnEmpty);
             Controls.Add(btnAdd);
@@ -279,7 +299,9 @@ namespace Palkanlaskenta_harjoitustyö
         private Button btnAdd;
         private Button btnEmpty;
         private Label lblEmployeeID;
-        private TextBox textBox1;
+        private TextBox txtEmployeeID;
         private DateTimePicker dtpBirthdate;
+        private TextBox txtSocialSecurityNumber;
+        private Label lblSocialSecurityNumber;
     }
 }

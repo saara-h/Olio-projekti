@@ -30,7 +30,7 @@
         {
             MenuPanel = new Panel();
             btnCreatePayslip = new Button();
-            btnUpdateEmployee = new Button();
+            btnViewEmployees = new Button();
             btnAddEmployee = new Button();
             btnHomeControl = new Button();
             ContentPanel = new Panel();
@@ -40,7 +40,7 @@
             // MenuPanel
             // 
             MenuPanel.Controls.Add(btnCreatePayslip);
-            MenuPanel.Controls.Add(btnUpdateEmployee);
+            MenuPanel.Controls.Add(btnViewEmployees);
             MenuPanel.Controls.Add(btnAddEmployee);
             MenuPanel.Controls.Add(btnHomeControl);
             MenuPanel.Dock = DockStyle.Top;
@@ -61,13 +61,14 @@
             // 
             // btnUpdateEmployee
             // 
-            btnUpdateEmployee.Dock = DockStyle.Left;
-            btnUpdateEmployee.Location = new Point(316, 0);
-            btnUpdateEmployee.Name = "btnUpdateEmployee";
-            btnUpdateEmployee.Size = new Size(176, 56);
-            btnUpdateEmployee.TabIndex = 2;
-            btnUpdateEmployee.Text = "Henkilöstöhallinto";
-            btnUpdateEmployee.UseVisualStyleBackColor = true;
+            btnViewEmployees.Dock = DockStyle.Left;
+            btnViewEmployees.Location = new Point(316, 0);
+            btnViewEmployees.Name = "btnUpdateEmployee";
+            btnViewEmployees.Size = new Size(176, 56);
+            btnViewEmployees.TabIndex = 2;
+            btnViewEmployees.Text = "Henkilöstöhallinto";
+            btnViewEmployees.UseVisualStyleBackColor = true;
+            btnViewEmployees.Click += btnViewEmployees_Click;
             // 
             // btnAddEmployee
             // 
@@ -115,7 +116,7 @@
         #endregion
 
         private Panel MenuPanel;
-        private Button btnUpdateEmployee;
+        private Button btnViewEmployees;
         private Button btnAddEmployee;
         private Button btnHomeControl;
         private Panel ContentPanel;

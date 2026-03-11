@@ -30,5 +30,10 @@ namespace Palkanlaskenta_harjoitustyö
         {
             LoadControl(new AddEmployee(employeeRepository));
         }
+
+        private void btnViewEmployees_Click(object sender, EventArgs e)
+        {
+            LoadControl(new Controls.ViewEmployees(employeeRepository));
+        }
     }
 }
