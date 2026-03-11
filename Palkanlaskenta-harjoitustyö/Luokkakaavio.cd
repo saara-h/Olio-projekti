@@ -1,87 +1,117 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Palkanlaskenta_harjoitustyö.Properties.Resources" Collapsed="true">
-    <Position X="10" Y="0.5" Width="1.5" />
+    <Position X="10.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
     </TypeIdentifier>
   </Class>
   <Class Name="Palkanlaskenta_harjoitustyö.AddEmployee" Collapsed="true">
-    <Position X="8" Y="4" Width="1.5" />
+    <Position X="2.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>gACAIggCACBBAAAAAgiBACgCgCBAoEAgACACgIABAgI=</HashCode>
       <FileName>Controls\AddEmployee.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Palkanlaskenta_harjoitustyö.HomeControl" Collapsed="true">
-    <Position X="4.5" Y="4" Width="1.5" />
+    <Position X="2.5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAEAAAAAAAAAA=</HashCode>
       <FileName>Controls\HomeControl.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Palkanlaskenta_harjoitustyö.Employee">
-    <Position X="0.5" Y="0.75" Width="1.5" />
+    <Position X="7" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAGAAAAAAAICEAAgAAAQAAAAAAACCAAAAAAAIAAg=</HashCode>
       <FileName>Employee.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Palkanlaskenta_harjoitustyö.EmployeeRepository">
-    <Position X="3" Y="0.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAEQgAAAAABAAAAAAAEAACAAAAEAIAAAAAAAAEAA=</HashCode>
-      <FileName>EmployeeRepository.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Property Name="Employees" />
-    </ShowAsCollectionAssociation>
-  </Class>
   <Class Name="Palkanlaskenta_harjoitustyö.MainForm" Collapsed="true">
-    <Position X="10" Y="1.25" Width="1.5" />
+    <Position X="10.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>EAQAEAoAACAAAAAAEQCAAAACAAAAACAAAAEAAAAgAAg=</HashCode>
       <FileName>MainForm.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="Palkanlaskenta_harjoitustyö.Payslip">
+    <Position X="9" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIQAAAAAAAQACAAQgAAQAAAAAAAAAAAAAAgAAKAAA=</HashCode>
+      <FileName>Payslip.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Class Name="Palkanlaskenta_harjoitustyö.Program" Collapsed="true">
-    <Position X="10" Y="2.25" Width="1.5" />
+    <Position X="10.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Palkanlaskenta_harjoitustyö.Controls.ViewEmployees" Collapsed="true">
-    <Position X="6.25" Y="4" Width="1.5" />
+    <Position X="2.5" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>gACAIggChCBACAAQAgCBECgCgCBAIABgACAAgIABAgA=</HashCode>
       <FileName>Controls\ViewEmployees.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="Palkanlaskenta_harjoitustyö.PayCalculators.CalculateHourlyPay" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PayCalculators\CalculateHourlyPay.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Palkanlaskenta_harjoitustyö.Repos.EmployeeRepository">
+    <Position X="4.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEQgAAAAABAAAAAAAEAACAAAAEAIAAAAAAAAEAA=</HashCode>
+      <FileName>Repos\EmployeeRepository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Employees" />
+    </ShowAsCollectionAssociation>
+  </Class>
   <Class Name="Palkanlaskenta_harjoitustyö.Validators.BaseValidators" Collapsed="true">
-    <Position X="6.25" Y="0.5" Width="1.5" />
+    <Position X="1.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ACAAQAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAABAAAA=</HashCode>
       <FileName>Validators\BaseValidators.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Palkanlaskenta_harjoitustyö.Validators.ValidateEmployeeUpdate" Collapsed="true">
-    <Position X="5.5" Y="1.75" Width="1.5" />
+    <Position X="0.75" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Validators\ValidateEmployeeUpdate.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Palkanlaskenta_harjoitustyö.Validators.ValidateNewEmployee" Collapsed="true">
-    <Position X="7.25" Y="1.75" Width="1.5" />
+    <Position X="2.5" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAgQAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAARAA=</HashCode>
       <FileName>Validators\ValidateNewEmployee.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="System.Windows.Forms.UserControl" Collapsed="true">
-    <Position X="6.25" Y="3" Width="1.5" />
+    <Position X="0.75" Y="2.5" Width="1.5" />
     <TypeIdentifier />
   </Class>
+  <Class Name="Palkanlaskenta_harjoitustyö.PayCalculators.CalculateMonthlyPay" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PayCalculators\CalculateMonthlyPay.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Palkanlaskenta_harjoitustyö.PayCalculators.IPayCalculator" Collapsed="true">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PayCalculators\IPayCalculator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
