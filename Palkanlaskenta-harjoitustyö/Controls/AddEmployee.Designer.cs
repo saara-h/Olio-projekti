@@ -31,7 +31,6 @@ namespace Palkanlaskenta_harjoitustyö
         private void InitializeComponent()
         {
             lblFirstName = new Label();
-            txtFirstName = new TextBox();
             txtLastName = new TextBox();
             lblLastName = new Label();
             lblBirthDate = new Label();
@@ -47,11 +46,12 @@ namespace Palkanlaskenta_harjoitustyö
             comboPayType = new ComboBox();
             btnAdd = new Button();
             btnEmpty = new Button();
-            lblEmployeeID = new Label();
-            txtEmployeeID = new TextBox();
             dtpBirthdate = new DateTimePicker();
             txtSocialSecurityNumber = new TextBox();
             lblSocialSecurityNumber = new Label();
+            txtFirstName = new TextBox();
+            lblEmployeeInfo = new Label();
+            lblSalaryInfo = new Label();
             SuspendLayout();
             // 
             // lblFirstName
@@ -63,24 +63,17 @@ namespace Palkanlaskenta_harjoitustyö
             lblFirstName.TabIndex = 1;
             lblFirstName.Text = "Etunimi";
             // 
-            // txtFirstName
-            // 
-            txtFirstName.Location = new Point(54, 99);
-            txtFirstName.Name = "txtFirstName";
-            txtFirstName.Size = new Size(190, 31);
-            txtFirstName.TabIndex = 2;
-            // 
             // txtLastName
             // 
-            txtLastName.Location = new Point(250, 99);
+            txtLastName.Location = new Point(273, 99);
             txtLastName.Name = "txtLastName";
-            txtLastName.Size = new Size(293, 31);
+            txtLastName.Size = new Size(253, 31);
             txtLastName.TabIndex = 4;
             // 
             // lblLastName
             // 
             lblLastName.AutoSize = true;
-            lblLastName.Location = new Point(250, 71);
+            lblLastName.Location = new Point(273, 71);
             lblLastName.Name = "lblLastName";
             lblLastName.Size = new Size(85, 25);
             lblLastName.TabIndex = 3;
@@ -89,7 +82,7 @@ namespace Palkanlaskenta_harjoitustyö
             // lblBirthDate
             // 
             lblBirthDate.AutoSize = true;
-            lblBirthDate.Location = new Point(54, 133);
+            lblBirthDate.Location = new Point(54, 148);
             lblBirthDate.Name = "lblBirthDate";
             lblBirthDate.Size = new Size(111, 25);
             lblBirthDate.TabIndex = 5;
@@ -97,15 +90,15 @@ namespace Palkanlaskenta_harjoitustyö
             // 
             // txtAddress
             // 
-            txtAddress.Location = new Point(54, 223);
+            txtAddress.Location = new Point(54, 261);
             txtAddress.Name = "txtAddress";
-            txtAddress.Size = new Size(489, 31);
+            txtAddress.Size = new Size(474, 31);
             txtAddress.TabIndex = 8;
             // 
             // lblAddress
             // 
             lblAddress.AutoSize = true;
-            lblAddress.Location = new Point(54, 195);
+            lblAddress.Location = new Point(54, 233);
             lblAddress.Name = "lblAddress";
             lblAddress.Size = new Size(64, 25);
             lblAddress.TabIndex = 7;
@@ -114,7 +107,7 @@ namespace Palkanlaskenta_harjoitustyö
             // lblJobTitle
             // 
             lblJobTitle.AutoSize = true;
-            lblJobTitle.Location = new Point(54, 257);
+            lblJobTitle.Location = new Point(585, 71);
             lblJobTitle.Name = "lblJobTitle";
             lblJobTitle.Size = new Size(123, 25);
             lblJobTitle.TabIndex = 9;
@@ -122,15 +115,15 @@ namespace Palkanlaskenta_harjoitustyö
             // 
             // txtSalary
             // 
-            txtSalary.Location = new Point(466, 287);
+            txtSalary.Location = new Point(765, 180);
             txtSalary.Name = "txtSalary";
-            txtSalary.Size = new Size(82, 31);
+            txtSalary.Size = new Size(93, 31);
             txtSalary.TabIndex = 12;
             // 
             // lblSalary
             // 
             lblSalary.AutoSize = true;
-            lblSalary.Location = new Point(466, 257);
+            lblSalary.Location = new Point(765, 150);
             lblSalary.Name = "lblSalary";
             lblSalary.Size = new Size(86, 25);
             lblSalary.TabIndex = 11;
@@ -138,15 +131,15 @@ namespace Palkanlaskenta_harjoitustyö
             // 
             // txtTaxRate
             // 
-            txtTaxRate.Location = new Point(209, 342);
+            txtTaxRate.Location = new Point(746, 261);
             txtTaxRate.Name = "txtTaxRate";
-            txtTaxRate.Size = new Size(71, 31);
+            txtTaxRate.Size = new Size(82, 31);
             txtTaxRate.TabIndex = 14;
             // 
             // lblTaxRate
             // 
             lblTaxRate.AutoSize = true;
-            lblTaxRate.Location = new Point(54, 342);
+            lblTaxRate.Location = new Point(591, 261);
             lblTaxRate.Name = "lblTaxRate";
             lblTaxRate.Size = new Size(149, 25);
             lblTaxRate.TabIndex = 13;
@@ -155,7 +148,7 @@ namespace Palkanlaskenta_harjoitustyö
             // lblPayType
             // 
             lblPayType.AutoSize = true;
-            lblPayType.Location = new Point(320, 257);
+            lblPayType.Location = new Point(585, 150);
             lblPayType.Name = "lblPayType";
             lblPayType.Size = new Size(98, 25);
             lblPayType.TabIndex = 15;
@@ -166,9 +159,9 @@ namespace Palkanlaskenta_harjoitustyö
             comboJobTitle.DropDownStyle = ComboBoxStyle.DropDownList;
             comboJobTitle.FormattingEnabled = true;
             comboJobTitle.Items.AddRange(new object[] { "Tehdastyöntekijä", "Kokoonpanija", "Esihenkilö", "Tilaustenkäsittelijä", "Varastotyöntekijä", "HR-assistentti" });
-            comboJobTitle.Location = new Point(54, 285);
+            comboJobTitle.Location = new Point(585, 99);
             comboJobTitle.Name = "comboJobTitle";
-            comboJobTitle.Size = new Size(255, 33);
+            comboJobTitle.Size = new Size(266, 33);
             comboJobTitle.TabIndex = 16;
             // 
             // comboPayType
@@ -176,16 +169,16 @@ namespace Palkanlaskenta_harjoitustyö
             comboPayType.DropDownStyle = ComboBoxStyle.DropDownList;
             comboPayType.FormattingEnabled = true;
             comboPayType.Items.AddRange(new object[] { "Kuukausipalkka", "Tuntipalkka" });
-            comboPayType.Location = new Point(320, 285);
+            comboPayType.Location = new Point(585, 178);
             comboPayType.Name = "comboPayType";
-            comboPayType.Size = new Size(140, 33);
+            comboPayType.Size = new Size(151, 33);
             comboPayType.TabIndex = 17;
             // 
             // btnAdd
             // 
-            btnAdd.Location = new Point(431, 418);
+            btnAdd.Location = new Point(782, 409);
             btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(112, 34);
+            btnAdd.Size = new Size(104, 43);
             btnAdd.TabIndex = 18;
             btnAdd.Text = "Lisää";
             btnAdd.UseVisualStyleBackColor = true;
@@ -193,68 +186,78 @@ namespace Palkanlaskenta_harjoitustyö
             // 
             // btnEmpty
             // 
-            btnEmpty.Location = new Point(306, 418);
+            btnEmpty.Location = new Point(652, 409);
             btnEmpty.Name = "btnEmpty";
-            btnEmpty.Size = new Size(112, 34);
+            btnEmpty.Size = new Size(103, 43);
             btnEmpty.TabIndex = 19;
             btnEmpty.Text = "Tyhjää";
             btnEmpty.UseVisualStyleBackColor = true;
             btnEmpty.Click += btnEmpty_Click;
             // 
-            // lblEmployeeID
-            // 
-            lblEmployeeID.AutoSize = true;
-            lblEmployeeID.Location = new Point(56, 30);
-            lblEmployeeID.Name = "lblEmployeeID";
-            lblEmployeeID.Size = new Size(30, 25);
-            lblEmployeeID.TabIndex = 20;
-            lblEmployeeID.Text = "ID";
-            // 
-            // txtEmployeeID
-            // 
-            txtEmployeeID.Location = new Point(92, 27);
-            txtEmployeeID.Name = "txtEmployeeID";
-            txtEmployeeID.ReadOnly = true;
-            txtEmployeeID.Size = new Size(33, 31);
-            txtEmployeeID.TabIndex = 21;
-            // 
             // dtpBirthdate
             // 
             dtpBirthdate.Format = DateTimePickerFormat.Short;
-            dtpBirthdate.Location = new Point(54, 161);
-            dtpBirthdate.MaxDate = DateTime.Today;
+            dtpBirthdate.Location = new Point(54, 176);
+            dtpBirthdate.MaxDate = new DateTime(2026, 3, 12, 0, 0, 0, 0);
             dtpBirthdate.Name = "dtpBirthdate";
             dtpBirthdate.RightToLeft = RightToLeft.No;
-            dtpBirthdate.Size = new Size(190, 31);
+            dtpBirthdate.Size = new Size(201, 31);
             dtpBirthdate.TabIndex = 22;
-            dtpBirthdate.Value = DateTime.Today;
+            dtpBirthdate.Value = new DateTime(2026, 3, 12, 0, 0, 0, 0);
             // 
             // txtSocialSecurityNumber
             // 
-            txtSocialSecurityNumber.Location = new Point(250, 161);
+            txtSocialSecurityNumber.Location = new Point(273, 178);
             txtSocialSecurityNumber.Name = "txtSocialSecurityNumber";
-            txtSocialSecurityNumber.Size = new Size(183, 31);
+            txtSocialSecurityNumber.Size = new Size(253, 31);
             txtSocialSecurityNumber.TabIndex = 23;
             // 
             // lblSocialSecurityNumber
             // 
             lblSocialSecurityNumber.AutoSize = true;
-            lblSocialSecurityNumber.Location = new Point(250, 133);
+            lblSocialSecurityNumber.Location = new Point(273, 148);
             lblSocialSecurityNumber.Name = "lblSocialSecurityNumber";
             lblSocialSecurityNumber.Size = new Size(126, 25);
             lblSocialSecurityNumber.TabIndex = 24;
             lblSocialSecurityNumber.Text = "Henkilötunnus";
+            // 
+            // txtFirstName
+            // 
+            txtFirstName.Location = new Point(54, 99);
+            txtFirstName.Name = "txtFirstName";
+            txtFirstName.Size = new Size(201, 31);
+            txtFirstName.TabIndex = 2;
+            // 
+            // lblEmployeeInfo
+            // 
+            lblEmployeeInfo.AutoSize = true;
+            lblEmployeeInfo.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblEmployeeInfo.Location = new Point(54, 26);
+            lblEmployeeInfo.Name = "lblEmployeeInfo";
+            lblEmployeeInfo.Size = new Size(170, 32);
+            lblEmployeeInfo.TabIndex = 25;
+            lblEmployeeInfo.Text = "Henkilötiedot";
+            // 
+            // lblSalaryInfo
+            // 
+            lblSalaryInfo.AutoSize = true;
+            lblSalaryInfo.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblSalaryInfo.Location = new Point(585, 26);
+            lblSalaryInfo.Name = "lblSalaryInfo";
+            lblSalaryInfo.Size = new Size(155, 32);
+            lblSalaryInfo.TabIndex = 26;
+            lblSalaryInfo.Text = "Palkkatiedot";
             // 
             // AddEmployee
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
+            Controls.Add(lblSalaryInfo);
+            Controls.Add(lblEmployeeInfo);
             Controls.Add(lblSocialSecurityNumber);
             Controls.Add(txtSocialSecurityNumber);
             Controls.Add(dtpBirthdate);
-            Controls.Add(txtEmployeeID);
-            Controls.Add(lblEmployeeID);
             Controls.Add(btnEmpty);
             Controls.Add(btnAdd);
             Controls.Add(comboPayType);
@@ -273,7 +276,7 @@ namespace Palkanlaskenta_harjoitustyö
             Controls.Add(txtFirstName);
             Controls.Add(lblFirstName);
             Name = "AddEmployee";
-            Size = new Size(668, 514);
+            Size = new Size(997, 475);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -282,7 +285,6 @@ namespace Palkanlaskenta_harjoitustyö
 
         private ListBox listEmployees;
         private Label lblFirstName;
-        private TextBox txtFirstName;
         private TextBox txtLastName;
         private Label lblLastName;
         private Label lblBirthDate;
@@ -298,10 +300,11 @@ namespace Palkanlaskenta_harjoitustyö
         private ComboBox comboPayType;
         private Button btnAdd;
         private Button btnEmpty;
-        private Label lblEmployeeID;
-        private TextBox txtEmployeeID;
         private DateTimePicker dtpBirthdate;
         private TextBox txtSocialSecurityNumber;
         private Label lblSocialSecurityNumber;
+        private TextBox txtFirstName;
+        private Label lblEmployeeInfo;
+        private Label lblSalaryInfo;
     }
 }

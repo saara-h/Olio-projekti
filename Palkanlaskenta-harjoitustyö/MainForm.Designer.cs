@@ -46,7 +46,7 @@
             MenuPanel.Dock = DockStyle.Top;
             MenuPanel.Location = new Point(0, 0);
             MenuPanel.Name = "MenuPanel";
-            MenuPanel.Size = new Size(741, 56);
+            MenuPanel.Size = new Size(997, 56);
             MenuPanel.TabIndex = 0;
             // 
             // btnCreatePayslip
@@ -58,12 +58,13 @@
             btnCreatePayslip.TabIndex = 3;
             btnCreatePayslip.Text = "Palkanlaskenta";
             btnCreatePayslip.UseVisualStyleBackColor = true;
+            btnCreatePayslip.Click += btnCreatePayslip_Click;
             // 
-            // btnUpdateEmployee
+            // btnViewEmployees
             // 
             btnViewEmployees.Dock = DockStyle.Left;
             btnViewEmployees.Location = new Point(316, 0);
-            btnViewEmployees.Name = "btnUpdateEmployee";
+            btnViewEmployees.Name = "btnViewEmployees";
             btnViewEmployees.Size = new Size(176, 56);
             btnViewEmployees.TabIndex = 2;
             btnViewEmployees.Text = "Henkilöstöhallinto";
@@ -97,14 +98,14 @@
             ContentPanel.Dock = DockStyle.Fill;
             ContentPanel.Location = new Point(0, 56);
             ContentPanel.Name = "ContentPanel";
-            ContentPanel.Size = new Size(741, 499);
+            ContentPanel.Size = new Size(997, 475);
             ContentPanel.TabIndex = 1;
             // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(741, 555);
+            ClientSize = new Size(997, 531);
             Controls.Add(ContentPanel);
             Controls.Add(MenuPanel);
             Name = "MainForm";

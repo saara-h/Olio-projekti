@@ -37,5 +37,10 @@ namespace Palkanlaskenta_harjoitustyö
         {
             LoadControl(new Controls.ViewEmployees(employeeRepository));
         }
+
+        private void btnCreatePayslip_Click(object sender, EventArgs e)
+        {
+            LoadControl(new Controls.CreatePayslip(employeeRepository));
+        }
     }
 }

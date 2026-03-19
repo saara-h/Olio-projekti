@@ -33,8 +33,7 @@
             // 
             // textBox1
             // 
-            textBox1.Dock = DockStyle.Top;
-            textBox1.Location = new Point(0, 0);
+            textBox1.Location = new Point(237, 159);
             textBox1.Name = "textBox1";
             textBox1.ReadOnly = true;
             textBox1.Size = new Size(505, 31);
@@ -47,7 +46,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(textBox1);
             Name = "HomeControl";
-            Size = new Size(505, 265);
+            Size = new Size(997, 475);
             ResumeLayout(false);
             PerformLayout();
         }

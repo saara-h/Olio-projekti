@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Palkanlaskenta_harjoitustyö.PayCalculators
 {
-    public class CalculateMonthlyPay : IPayCalculator
+    public class MonthlyPayCalculator : IPayCalculator
     {
         public Payslip CreatePayslip(Employee employee, decimal workedHours = 0)
         {
@@ -14,19 +14,7 @@ namespace Palkanlaskenta_harjoitustyö.PayCalculators
             decimal taxAmount = grossPay * employee.TaxRate;
             decimal netPay = grossPay - taxAmount;
 
-            return new Payslip
-            {
-                EmployeeId = employee.Id,
-                EmployeeName = employee.FullName,
-                JobTitle = employee.JobTitle,
-                PayType = employee.PayType,
-                HourlyRateOrMonthlySalary = employee.Salary,
-                WorkedHours = 0,
-                GrossPay = grossPay,
-                TaxRate = employee.TaxRate,
-                TaxAmount = taxAmount,
-                NetPay = netPay
-            };
+            return new Payslip(employee, 0, grossPay, taxAmount, netPay);
         }
     }
 }

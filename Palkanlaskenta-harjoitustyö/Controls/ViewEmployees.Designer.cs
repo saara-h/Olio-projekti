@@ -57,14 +57,14 @@
             listEmployees.ItemHeight = 25;
             listEmployees.Location = new Point(12, 15);
             listEmployees.Name = "listEmployees";
-            listEmployees.Size = new Size(161, 479);
+            listEmployees.Size = new Size(238, 479);
             listEmployees.TabIndex = 0;
             listEmployees.SelectedIndexChanged += listEmployees_SelectedIndexChanged;
             // 
             // lblEmployeeID
             // 
             lblEmployeeID.AutoSize = true;
-            lblEmployeeID.Location = new Point(207, 15);
+            lblEmployeeID.Location = new Point(362, 28);
             lblEmployeeID.Name = "lblEmployeeID";
             lblEmployeeID.Size = new Size(30, 25);
             lblEmployeeID.TabIndex = 1;
@@ -72,7 +72,7 @@
             // 
             // txtEmployeeID
             // 
-            txtEmployeeID.Location = new Point(243, 15);
+            txtEmployeeID.Location = new Point(398, 28);
             txtEmployeeID.Name = "txtEmployeeID";
             txtEmployeeID.ReadOnly = true;
             txtEmployeeID.Size = new Size(68, 31);
@@ -80,7 +80,7 @@
             // 
             // txtSocialSecurityNumber
             // 
-            txtSocialSecurityNumber.Location = new Point(479, 15);
+            txtSocialSecurityNumber.Location = new Point(674, 25);
             txtSocialSecurityNumber.Name = "txtSocialSecurityNumber";
             txtSocialSecurityNumber.ReadOnly = true;
             txtSocialSecurityNumber.Size = new Size(129, 31);
@@ -89,7 +89,7 @@
             // lblSocialSecurityNumber
             // 
             lblSocialSecurityNumber.AutoSize = true;
-            lblSocialSecurityNumber.Location = new Point(347, 18);
+            lblSocialSecurityNumber.Location = new Point(542, 28);
             lblSocialSecurityNumber.Name = "lblSocialSecurityNumber";
             lblSocialSecurityNumber.Size = new Size(126, 25);
             lblSocialSecurityNumber.TabIndex = 3;
@@ -98,7 +98,7 @@
             // lblFirstName
             // 
             lblFirstName.AutoSize = true;
-            lblFirstName.Location = new Point(207, 63);
+            lblFirstName.Location = new Point(362, 76);
             lblFirstName.Name = "lblFirstName";
             lblFirstName.Size = new Size(71, 25);
             lblFirstName.TabIndex = 5;
@@ -106,24 +106,24 @@
             // 
             // txtFirstName
             // 
-            txtFirstName.Location = new Point(207, 91);
+            txtFirstName.Location = new Point(362, 104);
             txtFirstName.Name = "txtFirstName";
             txtFirstName.ReadOnly = true;
-            txtFirstName.Size = new Size(150, 31);
+            txtFirstName.Size = new Size(176, 31);
             txtFirstName.TabIndex = 6;
             // 
             // txtLastName
             // 
-            txtLastName.Location = new Point(373, 91);
+            txtLastName.Location = new Point(544, 104);
             txtLastName.Name = "txtLastName";
             txtLastName.ReadOnly = true;
-            txtLastName.Size = new Size(235, 31);
+            txtLastName.Size = new Size(259, 31);
             txtLastName.TabIndex = 8;
             // 
             // lblLastName
             // 
             lblLastName.AutoSize = true;
-            lblLastName.Location = new Point(373, 63);
+            lblLastName.Location = new Point(544, 76);
             lblLastName.Name = "lblLastName";
             lblLastName.Size = new Size(85, 25);
             lblLastName.TabIndex = 7;
@@ -131,15 +131,15 @@
             // 
             // txtAddress
             // 
-            txtAddress.Location = new Point(206, 156);
+            txtAddress.Location = new Point(361, 169);
             txtAddress.Name = "txtAddress";
-            txtAddress.Size = new Size(401, 31);
+            txtAddress.Size = new Size(442, 31);
             txtAddress.TabIndex = 10;
             // 
             // lblAddress
             // 
             lblAddress.AutoSize = true;
-            lblAddress.Location = new Point(206, 128);
+            lblAddress.Location = new Point(361, 141);
             lblAddress.Name = "lblAddress";
             lblAddress.Size = new Size(64, 25);
             lblAddress.TabIndex = 9;
@@ -150,7 +150,7 @@
             comboPayType.DropDownStyle = ComboBoxStyle.DropDownList;
             comboPayType.FormattingEnabled = true;
             comboPayType.Items.AddRange(new object[] { "Kuukausipalkka", "Tuntipalkka" });
-            comboPayType.Location = new Point(206, 287);
+            comboPayType.Location = new Point(640, 242);
             comboPayType.Name = "comboPayType";
             comboPayType.Size = new Size(164, 33);
             comboPayType.TabIndex = 25;
@@ -160,7 +160,7 @@
             comboJobTitle.DropDownStyle = ComboBoxStyle.DropDownList;
             comboJobTitle.FormattingEnabled = true;
             comboJobTitle.Items.AddRange(new object[] { "Tehdastyöntekijä", "Kokoonpanija", "Esihenkilö", "Tilaustenkäsittelijä", "Varastotyöntekijä", "HR-assistentti" });
-            comboJobTitle.Location = new Point(207, 219);
+            comboJobTitle.Location = new Point(362, 242);
             comboJobTitle.Name = "comboJobTitle";
             comboJobTitle.Size = new Size(255, 33);
             comboJobTitle.TabIndex = 24;
@@ -168,7 +168,7 @@
             // lblPayType
             // 
             lblPayType.AutoSize = true;
-            lblPayType.Location = new Point(206, 259);
+            lblPayType.Location = new Point(640, 214);
             lblPayType.Name = "lblPayType";
             lblPayType.Size = new Size(98, 25);
             lblPayType.TabIndex = 23;
@@ -176,7 +176,7 @@
             // 
             // txtTaxRate
             // 
-            txtTaxRate.Location = new Point(353, 339);
+            txtTaxRate.Location = new Point(518, 318);
             txtTaxRate.Name = "txtTaxRate";
             txtTaxRate.Size = new Size(80, 31);
             txtTaxRate.TabIndex = 22;
@@ -184,7 +184,7 @@
             // lblTaxRate
             // 
             lblTaxRate.AutoSize = true;
-            lblTaxRate.Location = new Point(207, 339);
+            lblTaxRate.Location = new Point(508, 288);
             lblTaxRate.Name = "lblTaxRate";
             lblTaxRate.Size = new Size(149, 25);
             lblTaxRate.TabIndex = 21;
@@ -192,7 +192,7 @@
             // 
             // txtSalary
             // 
-            txtSalary.Location = new Point(376, 289);
+            txtSalary.Location = new Point(362, 318);
             txtSalary.Name = "txtSalary";
             txtSalary.Size = new Size(82, 31);
             txtSalary.TabIndex = 20;
@@ -200,7 +200,7 @@
             // lblSalary
             // 
             lblSalary.AutoSize = true;
-            lblSalary.Location = new Point(376, 259);
+            lblSalary.Location = new Point(362, 288);
             lblSalary.Name = "lblSalary";
             lblSalary.Size = new Size(86, 25);
             lblSalary.TabIndex = 19;
@@ -209,7 +209,7 @@
             // lblJobTitle
             // 
             lblJobTitle.AutoSize = true;
-            lblJobTitle.Location = new Point(207, 191);
+            lblJobTitle.Location = new Point(362, 214);
             lblJobTitle.Name = "lblJobTitle";
             lblJobTitle.Size = new Size(123, 25);
             lblJobTitle.TabIndex = 18;
@@ -217,9 +217,9 @@
             // 
             // btnUndoChanges
             // 
-            btnUndoChanges.Location = new Point(361, 419);
+            btnUndoChanges.Location = new Point(702, 398);
             btnUndoChanges.Name = "btnUndoChanges";
-            btnUndoChanges.Size = new Size(112, 34);
+            btnUndoChanges.Size = new Size(117, 46);
             btnUndoChanges.TabIndex = 27;
             btnUndoChanges.Text = "Palauta";
             btnUndoChanges.UseVisualStyleBackColor = true;
@@ -227,9 +227,9 @@
             // 
             // btnUpdate
             // 
-            btnUpdate.Location = new Point(479, 419);
+            btnUpdate.Location = new Point(825, 398);
             btnUpdate.Name = "btnUpdate";
-            btnUpdate.Size = new Size(128, 34);
+            btnUpdate.Size = new Size(133, 46);
             btnUpdate.TabIndex = 26;
             btnUpdate.Text = "Päivitä tiedot";
             btnUpdate.UseVisualStyleBackColor = true;
@@ -261,7 +261,7 @@
             Controls.Add(lblEmployeeID);
             Controls.Add(listEmployees);
             Name = "ViewEmployees";
-            Size = new Size(668, 514);
+            Size = new Size(997, 475);
             ResumeLayout(false);
             PerformLayout();
         }
