@@ -22,6 +22,10 @@ namespace Palkanlaskenta_harjoitustyö
             InitializeComponent();
             employeeRepository = repository;
             validator = new ValidateNewEmployee(employeeRepository);
+            //asetetaan syntymäpäiväkalenterin maksimiarvoksi tämän päivän päivämäärä
+            //designer on niin fiksu ettei "today"-konsepti kelpaa kiinteäksi arvoksi
+            dtpBirthdate.MaxDate = DateTime.Today;
+            dtpBirthdate.Value = DateTime.Today;
         }
 
         //luodaan uusi olio "Lisää"-napilla
@@ -75,6 +79,7 @@ namespace Palkanlaskenta_harjoitustyö
         //syötteiden tyhjennysmetodi
         private void ClearInputs()
         {
+            dtpBirthdate.MaxDate = DateTime.Today; //muuten herjaa että päivämäärä out of range
             txtFirstName.Clear();
             txtLastName.Clear();
             dtpBirthdate.Value = DateTime.Today;

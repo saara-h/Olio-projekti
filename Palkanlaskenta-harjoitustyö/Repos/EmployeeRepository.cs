@@ -63,34 +63,55 @@ namespace Palkanlaskenta_harjoitustyö.Repos
         }
 
         //haetaan kaikki työntekijät
+        //luodaan kopio listasta, joten ei voida esim. tyhjätä listaa ulkopuolelta
         public List<Employee> GetAllEmployees()
         {
-            return Employees;
+            return new List<Employee>(Employees);
+        }
+
+        //haetaan työntekijä ID:llä
+        public Employee? GetEmployeeById(int id)
+        {
+            return Employees.FirstOrDefault(e => e.Id == id);
         }
 
         //tiedostoon tallennus
         private void SaveToFile()
         {
-            var options = new JsonSerializerOptions
-            { WriteIndented = true };
-            string json = JsonSerializer.Serialize(Employees, options);
-            File.WriteAllText(filePath, json);
+            try
+            {
+                var options = new JsonSerializerOptions
+                { WriteIndented = true };
+                string json = JsonSerializer.Serialize(Employees, options);
+                File.WriteAllText(filePath, json);
+            } 
+            catch 
+            {
+                MessageBox.Show("Virhe tallennettaessa työntekijätietoja.");
+            }
         }
 
         //tiedostosta lataus
         private List<Employee> LoadFromFile()
         {
-            if (!File.Exists(filePath))
+            try
             {
+                if (!File.Exists(filePath))
+                {
+                    return new List<Employee>();
+                }
+                string json = File.ReadAllText(filePath);
+                if (string.IsNullOrWhiteSpace(json))
+                {
+                    return new List<Employee>();
+                }
+                return JsonSerializer.Deserialize<List<Employee>>(json) ?? new List<Employee>();
+            } 
+            catch
+            {
+                MessageBox.Show("Virhe ladattaessa työntekijätietoja.");
                 return new List<Employee>();
             }
-            string json = File.ReadAllText(filePath);
-            if (string.IsNullOrWhiteSpace(json))
-            {
-                return new List<Employee>();
-            }
-            return JsonSerializer.Deserialize<List<Employee>>(json) ?? new List<Employee>();
         }
-
     }
 }

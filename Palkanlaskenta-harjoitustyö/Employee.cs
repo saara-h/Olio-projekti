@@ -9,13 +9,13 @@ namespace Palkanlaskenta_harjoitustyö
     public class Employee
     {
         public int Id { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+        public string FirstName { get; set; } = "";
+        public string LastName { get; set; } = "";
         public DateTime Birthdate { get; set; }
-        public string SocialSecurityNumber { get; set; }
-        public string Address { get; set; }
-        public string JobTitle { get; set; }
-        public string PayType { get; set; } //tuntipalkka vai kuukausipalkka
+        public string SocialSecurityNumber { get; set; } = "";
+        public string Address { get; set; } = "";
+        public string JobTitle { get; set; } = "";
+        public string PayType { get; set; } = ""; //tuntipalkka vai kuukausipalkka
         public decimal Salary { get; set; }
         public decimal TaxRate { get; set; }
 
